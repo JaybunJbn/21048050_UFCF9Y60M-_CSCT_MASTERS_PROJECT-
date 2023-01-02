@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScaLe | Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">ScaLe</a>
+        <ul>
+            <li><a href="info.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Sign in</a></li>
+        </ul>
+    </header>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list active">
+                <a href="#" style="--clr:#D9AFD9;">
+                    <span class="icon"><ion-icon name="analytics-outline"></ion-icon></span>
+                    <span class="text">Data</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" style="--clr:#97d9e1;">
+                    <span class="icon"><ion-icon name="cloud-upload-outline"></ion-icon></span>
+                    <span class="text">Upload</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" style="--clr:#F7CE68;">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">Setting</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+        let list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+</body>
+</html>
