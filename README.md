@@ -1,1 +1,3 @@
-# 21048050_UFCF9Y60M-_CSCT_MASTERS_PROJECT-
+**Student ID**: 21048050\
+**Name**: Jiralak Bunchongruchakul\
+**MSc Programme**: Data Science 
