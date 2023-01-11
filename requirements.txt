@@ -1,4 +1,4 @@
-tensorflow==1.5.0
+tensorflow==1.5
 h5py
 scikit-learn
 numpy
